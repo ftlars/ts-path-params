@@ -29,7 +29,7 @@ const pathWithParametersSet = setPathParameters(productsApi, parameters); // -> 
 ## Typesafety 
 
 ```ts
-import {type PathParameters, setPathParameters} from '../src/index';
+import {type PathParameters, setPathParameters} from '@ftlars/ts-path-params';
 
 // Example 1 -->
 const productsApi = '/api/products/:productId' as const;
