@@ -1,6 +1,6 @@
 {
   "name": "@ftlars/ts-path-params",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "A typesafe way for setting path parameter values for express style routes.",
   "main": "distribution/index.js",
   "types": "distribution/index.d.ts",
