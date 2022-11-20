@@ -1,4 +1,4 @@
-# ts-path-params
+# ts-path-params [![Build](https://github.com/ftlars/ts-path-params/actions/workflows/integrate.yml/badge.svg)](https://github.com/ftlars/ts-path-params/actions/workflows/integrate.yml)
 
 Typesafely set path parameter values for express style routes.
 
