@@ -1,18 +1,50 @@
 {
-  "name": "ts-path-params",
+  "name": "@ftlars/ts-path-params",
   "version": "1.0.0",
+  "description": "A typesafe way for setting path parameter values for express style routes.",
   "main": "distribution/index.js",
   "types": "distribution/index.d.ts",
-  "license": "MIT",
-  "scripts": {
-    "build": "del-cli distribution && tsc",
-    "test": "xo && jest"
-  },
+  "files": [
+		"distribution"
+	],
+  "keywords": [
+		"typescript",
+		"ts",
+		"type",
+		"types",
+		"express",
+		"path",
+		"params",
+		"parameters",
+		"typesafe",
+		"replace",
+		"helpers",
+    "utility",
+		"utilities",
+		"util"
+	],
   "devDependencies": {
     "del-cli": "^5.0.0",
     "jest": "^29.3.1",
     "ts-jest": "^29.0.3",
     "xo": "^0.53.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "build": "del-cli distribution && tsc",
+    "test": "xo && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ftlars/ts-path-params.git"
+  },
+  "author": {
+		"name": "Lars Ahman",
+		"email": "fasterthanlars@gmail.com"
+	},
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ftlars/ts-path-params/issues"
+  },
+  "homepage": "https://github.com/ftlars/ts-path-params#readme"
 }
