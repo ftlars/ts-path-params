@@ -1,0 +1,17 @@
+{
+  "name": "ts-path-params",
+  "version": "1.0.0",
+  "main": "distribution/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "del-cli distribution && tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "del-cli": "^5.0.0",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "xo": "^0.53.0"
+  },
+  "dependencies": {}
+}
