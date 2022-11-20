@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "del-cli distribution && tsc",
-    "test": "jest"
+    "test": "xo && jest"
   },
   "devDependencies": {
     "del-cli": "^5.0.0",
