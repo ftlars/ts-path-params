@@ -25,7 +25,7 @@ describe(setPathParameters.name, () => {
 		test('replace two parameters', () => {
 			const apiPath = '/:id/:name' as const;
 			const replacements: UrlParameters<typeof apiPath, 'id' | 'name'> = {
-				id: '1',
+				id: '2',
 				name: 'lars',
 			};
 			const expectedResult = '/1/lars';
