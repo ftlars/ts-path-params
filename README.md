@@ -31,11 +31,24 @@ const pathWithParametersSet = setPathParameters(productsApi, parameters); // -> 
 ```ts
 import {type PathParameters, setPathParameters} from '../src/index';
 
+// Example 1 -->
 const productsApi = '/api/products/:productId' as const;
 
+// Oops, misspelled 'productId' as 'id' in the PathParameters type
 const parameters: PathParameters<typeof productsApi, 'id'> = {
 	id: '123', // --> Type 'string' is not assignable to type 'never'.ts(2322)
 };
+
+// Example 2 -->
+const path = '/api/products/:productId' as const;
+
+// If you dont want to explicitly set the type of your parameters object and there is a type error, setPathParameters will give an error instead.
+const parameters = {
+	id: '123', // Oops, misspelled 'productId' as 'id'
+};
+
+const set = setPathParameters(path, parameters);
+// -> Argument of type '{ id: string; }' is not assignable to parameter of type 'PathParameters<"/api/products/:productId", "id">'.
 ```
 
 ## API
