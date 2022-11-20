@@ -45,5 +45,3 @@ const parameters: PathParameters<typeof productsApi, 'id'> = {
 
 **Types**
 - PathParameters - Requires two parameters: the type of the path and parameters you want to set as a string union. It feels weird having to give the parameters to this type and then setting them again in the object itself - this is due to a limitation of typescript. PathParameters will given an error if you try to set a value for a parameter that is not a substring of the provided path prefixed with a colon (':').
-
-The PathParameters type requires y
