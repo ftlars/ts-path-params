@@ -2,6 +2,7 @@
   "name": "ts-path-params",
   "version": "1.0.0",
   "main": "distribution/index.js",
+  "types": "distribution/index.d.ts",
   "license": "MIT",
   "scripts": {
     "build": "del-cli distribution && tsc",
